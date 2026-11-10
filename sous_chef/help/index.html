@@ -1,0 +1,51 @@
+<html><head><meta charset="utf-8"><title>How Sous Chef works</title></head>
+<body style="font-family: sans-serif; line-height: 1.45;">
+<h2>How Sous Chef works</h2>
+<p>Sous Chef turns what you do in QGIS into a <b>recipe</b>: a Processing model you can run again on other data.
+Recipes are saved in the <b>Recipe Book</b> group of the Processing Toolbox.</p>
+
+<h3>Making a recipe</h3>
+<ul>
+<li><b>Record:</b> press the record button on the Sous Chef toolbar, work as usual, then press it again to stop.
+While recording you can pause (to try things out), add a note to the step you just ran, look at what's
+been recorded so far, or throw the recording away.</li>
+<li><b>From a layer:</b> right-click a layer and choose <i>Create Recipe from This Layer…</i>. Sous Chef traces the
+steps that made it, back to the layers it started from.</li>
+<li><b>Tweak a saved recipe:</b> <i>Processing › Sous Chef › Open a Recipe to Review or Tweak…</i>, or right-click
+it in the Recipe Book.</li>
+</ul>
+
+<h3>What gets recorded</h3>
+<p>Processing tools (also batch and “iterate” runs), the Field Calculator, Save Features As, selections used by a
+tool, layer filters, joins set up in Layer Properties, the Raster Calculator window and virtual layers.
+A recipe you run while recording is unpacked into its own steps.
+Typed values, digitising and other edits by hand can't be repeated by a recipe: they're listed as warnings.</p>
+
+<h3>The review window</h3>
+<ul>
+<li><b>Ingredients</b> are what the recipe asks for when it runs: the layers to choose (amber) and any settings
+you choose to ask for (violet). Click a setting in a step and choose “Ask when the recipe runs”.</li>
+<li>Steps that look like repeats, earlier attempts or discarded results start <b>left out</b>, with the reason;
+tick them back in if needed.</li>
+<li>For each result, choose whether it's a final output, an intermediate result that isn't kept, or both.</li>
+<li><b>Taste Test</b> runs the recipe on the layers you recorded with and compares the results.</li>
+<li><b>Undo</b> (Ctrl+Z) takes back the last change.</li>
+<li><b>Images &amp; Animations…</b> makes pictures of the workflow, not the recipe itself: a still image (thirteen
+designs, from flowchart cards to a radial flowchart, sticky notes and a comic strip), an animation as a GIF or an MP4
+video (maps drawn step by step, a metro ride, a knight's pilgrimage, a kitchen, a board game and more) or a written recipe
+(a fun cookbook card, plain instructions, a methods paragraph for a report, or a checklist). Star your favourite designs
+to bring them to the front.</li>
+<li><b>Share</b> saves the recipe itself as one zip file (with its styles and symbol) or as a Python script.</li>
+<li>Right-click a step and choose <b>Start the Recipe from This Step's Result</b> to begin from that layer next time
+(a merged layer, say).</li>
+</ul>
+
+<h3>Running and sharing a recipe</h3>
+<p>Run it from the Recipe Book like any Processing tool. To share it, use <i>Share › Share as One Zip File…</i>
+(or right-click it in the Recipe Book). Others add the .model3 file with <i>Processing Toolbox › Models ›
+Add Model to Toolbox</i>; they don't need Sous Chef.</p>
+
+<h3>Settings and privacy</h3>
+<p>Sous Chef has a page in <i>Settings › Options</i>. It makes no internet connections. The background tracker
+keeps notes in memory only, and they're gone when QGIS closes.</p>
+</body></html>
