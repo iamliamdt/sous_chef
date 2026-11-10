@@ -1,0 +1,24 @@
+[general]
+name=Sous Chef
+qgisMinimumVersion=3.44
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=Record what you do in QGIS and turn it into a reusable recipe: a general Processing model.
+about=Sous Chef records what you do in QGIS and turns it into a reusable Processing model (a "recipe"). Press Record, work as usual, then press Stop. Sous Chef links the steps that use each other's results, turns the layers you started from into inputs with descriptive names, and saves the recipe to the Recipe Book in the Processing Toolbox, ready to run on other data. You can also right-click a layer to create a recipe of how it was made, and start a recipe from any step's result.
+    The review window shows the workflow as a flowchart, a list or the run dialog. It lets you choose which settings are asked when the recipe runs and taste-test the recipe on the recorded layers. Images & Animations makes pictures of the workflow (SVG, PNG, PDF), animations (GIF, or MP4 when ffmpeg is installed) and written recipes: a method, a methods paragraph, a checklist or a fun cookbook card.
+    Records Processing tools (including batch and iterate runs), the Field Calculator, Save Features As, selections, layer filters, joins, the Raster Calculator and virtual layers. Hand edits such as digitising or typed values are detected and reported, but cannot be repeated by a model.
+version=1.0.2
+author=Liam Downs-Tepper
+email=liam.downs-tepper@univie.ac.at
+homepage=https://github.com/iamliamdt/sous_chef
+repository=https://github.com/iamliamdt/sous_chef
+tracker=https://github.com/iamliamdt/sous_chef/issues
+tags=processing,model,modeler,graphical modeler,model designer,workflow,automation,recording,macro,history,provenance,lineage,reproducibility,documentation,flowchart,diagram,batch,recipe,animation,gif,mp4,video
+category=Plugins
+icon=icon.png
+experimental=False
+deprecated=False
+changelog=
+    1.0.1 First public release.
+    1.0.2 Fixed issue with creating workflow images from layers created via recipe.
+
