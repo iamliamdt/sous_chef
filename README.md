@@ -478,6 +478,11 @@ tracker only wakes up for the kinds of action it watches. The biggest
 cost is checking Field Calculator expressions on very large layers when
 you save.
 
+## Disclaimer
+
+AI was used in the creation of this plugin, but that doesn't mean it hasn't 
+been rigorously tested. Public version 1 is actually version 64.
+
 ## Licence
 
 GPL-3.0-or-later. See `sous_chef/LICENSE`. The bundled fonts
